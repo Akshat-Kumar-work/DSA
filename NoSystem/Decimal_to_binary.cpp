@@ -36,6 +36,9 @@ int decimalToBinaryMethod2(int m){
 
 
 
+
+
+
 int main(){
     int n = 10;
 
