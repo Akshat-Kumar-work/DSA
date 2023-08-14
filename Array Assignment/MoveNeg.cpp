@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     int arr[] = {1,2,-3,4,-5,-6};
 
+
     //method 1-> using sort function , T.C -> O(nlogn)
     // 6 element required 24 byte -> one element require 4 byte 
     // int arrayL=  sizeof(arr)/sizeof(arr[0]);

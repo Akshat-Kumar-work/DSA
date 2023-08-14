@@ -6,6 +6,8 @@ using namespace std;
 vector<int> intersectionOfArray ( vector<int>arr1 , vector<int>arr2){
         vector<int>ans;
 
+        cout<<ans.size();
+
     for(int i=0;i<arr1.size();i++){
 
         for(int j=0;j<arr2.size();j++){
