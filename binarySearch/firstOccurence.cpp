@@ -62,10 +62,18 @@ int main(){
 
 //using stl function
 auto ans = lower_bound(arr,arr+size,4);
-cout<<ans-arr<<endl;
+int firstindex = ans -arr;
+cout<<firstindex<<endl;
 
-auto address = &arr[9];
-cout<<address-arr;
+auto ans2 = upper_bound(arr,arr+size,4);
+int lastindex = ans2 -arr;
+cout<<lastindex<<endl;
+
+int totalOccurence = (lastindex-firstindex)+1;
+cout<<"total occurence"<<totalOccurence;
+
+// auto address = &arr[9];
+// cout<<address-arr;
 
 
 
