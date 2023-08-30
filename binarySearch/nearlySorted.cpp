@@ -9,13 +9,13 @@ int searchNearlySorted(int arr[],int target){
 
     while(start<=end){
 
-        if(arr[mid-1]==target){
+        if(mid-1>=0 && arr[mid-1]==target){
             return mid-1;
         }
         else if(arr[mid]==target){
             return mid;
         }
-        else if(arr[mid+1]==target){
+        else if(mid+1<=end && arr[mid+1]==target){
             return mid+1;
         }
         else if(arr[mid]>target){
