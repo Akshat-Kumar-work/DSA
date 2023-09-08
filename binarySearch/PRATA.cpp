@@ -5,24 +5,24 @@
 using namespace std;
 
 bool isPossibleTime(vector<int>CookRanks , int TotalPrata , int currentTime){
-    int PrataCount = 0;
+    int CookedPrataCount = 0;
 
     for(int i=0; i<CookRanks.size();i++){
         int CookRank = CookRanks[i];
-        int Currentprata=1;
-        int TimeTanken =0;
+        int Current_Prata_Cooking_No=1;
+        int TimeTaken =0;
 
         while(true){
-            if(TimeTanken + Currentprata * CookRank <= currentTime ){
-                ++PrataCount;
-                TimeTanken += Currentprata*CookRank;
-                ++Currentprata;
+            if(TimeTaken + Current_Prata_Cooking_No * CookRank <= currentTime ){
+                CookedPrataCount++;
+                TimeTaken += Current_Prata_Cooking_No*CookRank;
+                Current_Prata_Cooking_No++;
             }else{
                 break;
             }
         }
 
-        if(PrataCount >= TotalPrata){
+        if(CookedPrataCount >= TotalPrata){
             return true;
         }
     }
@@ -53,7 +53,7 @@ int main(){
 
     vector<int>CookRanks{1,2,3,4};
     int TotalPrata = 10;
-    int TotalCooks = 4;
+
 
     int ans = FindMinimumTime(CookRanks , TotalPrata);
     cout<<ans;
