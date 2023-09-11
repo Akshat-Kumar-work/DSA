@@ -2,9 +2,12 @@
 #include<unordered_map>
 using namespace std;
 
+
+
+
 int main(){
 
-    //declaring unordered map
+   // declaring unordered map
     unordered_map <int , int> hash;
     hash[3]++;
 
@@ -12,5 +15,7 @@ int main(){
 
      for (auto element : hash)
     cout << element.first << element.second;
+
+
 }
 
